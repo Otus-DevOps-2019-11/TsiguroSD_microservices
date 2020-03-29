@@ -1,0 +1,7 @@
+REPOSITORY                  TAG                 IMAGE ID            CREATED              SIZE
+tsigurosd/ubuntu-tmp-file   latest              320ad23829d0        About a minute ago   124MB
+ubuntu                      16.04               77be327e4b63        5 weeks ago          124MB
+hello-world                 latest              fce289e99eb9        15 months ago        1.84kB
+
+Отличие образа от контейнера:
+    На основе вывода команд ">docker inspect <u_container_id>"  ">docker inspect <u_image_id>" можно сделать вывод, что контейнер содержит в себе описание создаваемого хоста, с настройками сети, хранилища, лимитами, а образ, только описание конфигурации, слоев, то есть в некотором роде "инструкции", на основе чего собрать контейнер.
