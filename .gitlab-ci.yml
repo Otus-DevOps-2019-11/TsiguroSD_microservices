@@ -7,12 +7,13 @@ stages:
 variables:
     DATABASE_URL: 'mongodb://mongo/user_posts'
     DOCKER_TLS_CERTDIR: ""
+    DOCKER_HOST: tcp://localhost:2378
 
 build_job:
   stage: build
   image: docker:19.03.8
   services:
-    - docker:19.03.1-dind
+    - docker:19.03.8-dind
   before_script:
     - docker info
     - docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
