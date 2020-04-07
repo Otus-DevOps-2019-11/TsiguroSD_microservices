@@ -11,4 +11,7 @@ variables-full.json
 *.retry
 jdauphant.nginx
 
-terraform/.terraform
+
+
+venv
+.vscode
