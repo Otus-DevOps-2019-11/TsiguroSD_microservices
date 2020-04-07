@@ -7,6 +7,6 @@ variables-full.json
 *.tfstate.*.backup
 *.tfstate.backup
 *.tfvars
-.terraform/
+terraform/.terraform/
 *.retry
 jdauphant.nginx
