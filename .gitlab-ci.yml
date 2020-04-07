@@ -19,7 +19,7 @@ build_job:
     - docker images ls
   script:
     - echo 'Building'
-    - docker build -t otus-reddit:${CI_COMMIT_TAG:-1.0.0}.${CI_COMMIT_SHORT_SHA:-0} ./docker-monolith
+    - docker build -t ${DOCKERHUB_USER:-user}/otus-reddit:${CI_COMMIT_TAG:-1.0.0}.${CI_COMMIT_SHORT_SHA:-0} ./reddit
     - docker push ${DOCKERHUB_USER:-user}/otus-reddit:${CI_COMMIT_TAG:-1.0.0}.${CI_COMMIT_SHORT_SHA:-0}
   after_script:
     - docker images ls
