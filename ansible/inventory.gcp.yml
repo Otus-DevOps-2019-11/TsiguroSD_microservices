@@ -1,0 +1,16 @@
+plugin: gcp_compute
+projects:
+  - infra-2628190
+zones:
+  - "europe-west1-b"
+filters: []
+groups:
+  gitlab: "'gitlab' in name"
+hostnames:
+  - name
+auth_kind: serviceaccount
+service_account_file: "~/infra-2628190-8d7eaaf4711e.json"
+compose:
+  # Set an inventory parameter to use the Public IP address to connect to the host
+  # For Private ip use "networkInterfaces[0].networkIP"
+  ansible_host: networkInterfaces[0].accessConfigs[0].natIP
