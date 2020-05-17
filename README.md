@@ -85,3 +85,14 @@ active, выбрать события и заполнить поля с URL ва
 webhook.
 Добавьте ссылку на канал в слаке, в котором можно проверить
 работу оповещений, в файл README.md;
+
+# HW monitoring-1
+
+1) Prometheus запущен в контейнере на докер-хосте
+2) Добавлена конфигурация Prometheus на сбор метрик с микросервисов
+3) Добавлен сбор метрик докер-хоста с использованием node exporter, также запущеного в контейнере
+4) Последнии версии образов запушены на докер хаб
+ - https://hub.docker.com/repository/docker/tsigurosd/post
+ - https://hub.docker.com/repository/docker/tsigurosd/ui
+ - https://hub.docker.com/repository/docker/tsigurosd/comment
+ - https://hub.docker.com/repository/docker/tsigurosd/prometheus
