@@ -3,6 +3,8 @@ build_info.txt
 prometheus/
 post-py-old
 
+monitoring/alertmanager/config.yml
+
 
 ## python specific
 *.pyc
