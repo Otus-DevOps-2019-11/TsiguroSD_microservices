@@ -96,3 +96,10 @@ webhook.
  - https://hub.docker.com/repository/docker/tsigurosd/ui
  - https://hub.docker.com/repository/docker/tsigurosd/comment
  - https://hub.docker.com/repository/docker/tsigurosd/prometheus
+
+# HW monitoring-2
+
+1) Добавлен мониторинг контейнеров с помощью cAdvisor, развернутого так же в контейнере
+2) Развернута  Grafana в контейнере
+3) Добавлены дашборды Business_Logic_Monitoring, DockerMonitoring, UI_service_monitoring для мониторинга бизнес-логики приложения (количество постов и комментов), состояния и потребления ресурсов контейнеров, мониторинга самого приложения (количество http запросов и ошибок)
+4) Добавлен алерт на отключение любого из сервисов с помощью AlertManager, настроены оповещения в канал Slack
