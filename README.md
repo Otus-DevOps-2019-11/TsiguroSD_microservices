@@ -110,3 +110,8 @@ webhook.
 2) Добавлен dicker-compose-logging.yml, поднимающий elasticsearch, kibana, fluentd и zipkin
 3) Сбор структурированных логов и неструктурированным с помощью регулярных выражений и grok выражений
 4) Распределенная трасировка с помощью  zipkin
+
+# HW kubernetes-1
+
+1) Создан кластер kubernetes по документации Kubernetes The Hard Way https://github.com/kelseyhightower/kubernetes-the-hard-way
+2) Задеплоены приложения по конфигам kubernetes/reddit/
