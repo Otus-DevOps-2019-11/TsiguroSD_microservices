@@ -103,3 +103,15 @@ webhook.
 2) Развернута  Grafana в контейнере
 3) Добавлены дашборды Business_Logic_Monitoring, DockerMonitoring, UI_service_monitoring для мониторинга бизнес-логики приложения (количество постов и комментов), состояния и потребления ресурсов контейнеров, мониторинга самого приложения (количество http запросов и ошибок)
 4) Добавлен алерт на отключение любого из сервисов с помощью AlertManager, настроены оповещения в канал Slack
+
+# HW logging-1
+
+1) Обновлена сборка приложения с функционалом логирования
+2) Добавлен dicker-compose-logging.yml, поднимающий elasticsearch, kibana, fluentd и zipkin
+3) Сбор структурированных логов и неструктурированным с помощью регулярных выражений и grok выражений
+4) Распределенная трасировка с помощью  zipkin
+
+# HW kubernetes-1
+
+1) Создан кластер kubernetes по документации Kubernetes The Hard Way https://github.com/kelseyhightower/kubernetes-the-hard-way
+2) Задеплоены приложения по конфигам kubernetes/reddit/
