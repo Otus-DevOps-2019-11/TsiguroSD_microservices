@@ -115,3 +115,9 @@ webhook.
 
 1) Создан кластер kubernetes по документации Kubernetes The Hard Way https://github.com/kelseyhightower/kubernetes-the-hard-way
 2) Задеплоены приложения по конфигам kubernetes/reddit/
+
+# HW kubernetes-2
+
+1) Развернуто локальное окружение для Kubernetes: minikube с Virtualbox
+2) Созданы деплоймент и сервис файлы для компонентов reddit
+3) reddit задеплоен в GKE
