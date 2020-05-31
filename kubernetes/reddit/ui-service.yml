@@ -7,7 +7,6 @@ metadata:
     app: reddit
     component: ui
 spec:
-  type: NodePort
   ports:
   - port: 9292
     protocol: TCP
