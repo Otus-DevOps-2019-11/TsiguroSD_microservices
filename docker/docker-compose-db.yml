@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+
+  post_db:
+    image: mongo:3.2
+    environment:
+      - ZIPKIN_ENABLED=${ZIPKIN_ENABLED}
+    volumes:
+      - post_db:/data/db
+    networks:
+      back_net:
+        aliases:
+          - post_db
+          - comment_db
