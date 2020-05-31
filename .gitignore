@@ -16,7 +16,7 @@ terraform/
 
 monitoring/alertmanager/config.yml.true
 
-
+tls.key
 
 venv
 .vscode

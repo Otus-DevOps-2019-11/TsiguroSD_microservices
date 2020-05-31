@@ -121,3 +121,14 @@ webhook.
 1) Развернуто локальное окружение для Kubernetes: minikube с Virtualbox
 2) Созданы деплоймент и сервис файлы для компонентов reddit
 3) reddit задеплоен в GKE
+
+# HW kubernetes-2
+
+• Ingress Controller
+• Ingress
+• Secret
+• TLS
+• LoadBalancer Service
+• Network Policies
+• PersistentVolumes
+• PersistentVolumeClaims
