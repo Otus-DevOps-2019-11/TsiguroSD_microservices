@@ -124,11 +124,17 @@ webhook.
 
 # HW kubernetes-2
 
-• Ingress Controller
-• Ingress
-• Secret
-• TLS
-• LoadBalancer Service
-• Network Policies
-• PersistentVolumes
-• PersistentVolumeClaims
+• Ingress Controller  
+• Ingress  
+• Secret  
+• TLS  
+• LoadBalancer Service  
+• Network Policies  
+• PersistentVolumes  
+• PersistentVolumeClaims  
+
+# HW kubernetes-3
+
+1) Работа с Helm
+2) Развертывание Gitlab в Kubernetes
+3) Запуск CI/CD конвейера в Kubernetes
